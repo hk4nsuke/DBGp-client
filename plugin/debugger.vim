@@ -124,8 +124,8 @@ if filereadable($VIMRUNTIME."/plugin/debugger.py")
 elseif filereadable($HOME."/.vim/plugin/debugger.py")
   pyfile $HOME/.vim/plugin/debugger.py
 " for pathogen.vim
-elseif filereadable($HOME."/.vim/bundle/debugger/plugin/debugger.py")
-  pyfile $HOME/.vim/bundle/debugger/plugin/debugger.py
+elseif filereadable($HOME."/.vim/bundle/DBGp-client/plugin/debugger.py")
+  pyfile $HOME/.vim/bundle/DBGp-client/plugin/debugger.py
 else
   call confirm('debugger.vim: Unable to find debugger.py. Place it in either your home vim directory or in the Vim runtime directory.', 'OK')
 endif
